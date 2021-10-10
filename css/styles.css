@@ -3,24 +3,29 @@ body{
   background: #1E242A;
 }
 
+
 #main{
   width: 100%;
   height: 100%;
   position: absolute;
 
 }
+
 #box1{
-  width: 530px
-  height: 625px;
+  width: 668px;
+  height: 622px;
   background-image:url("images/grid.png");
-  position: absolute;
-  bottom: -100%;
-  left: 30%;
-  animation: anim 2s forwards, anim2 3s forwards 3s;
+  position: relative;
+  padding-top: 119px;
+  left: 48%;
+  animation: anim 2s forwards, anim2 5s forwards 5s;
 }
-#box1:after{
+
+
+ #box1:after{
   content: '';
-  position: absolute;
+  position: relative;
+  left: 50%;
   width: 530px;
   height: 625px;
   background-image:
@@ -28,19 +33,19 @@ body{
   left: 0px;
 }
 
-@keyframes anim {
+ @keyframes anim {
   from{
     bottom: -100%;
   }
 
   to{
-    bottom: 0%;
+    bottom: 20%;
   }
 }
 @keyframes anim2 {
   from{
-    left: 30%;
-    width: 530px;
+    left: 50%;
+    width: 0px;
   }
   to{
     width: 0px;
@@ -80,22 +85,40 @@ body{
 #box3{
   overflow: hidden;
 
-}
-#container{
-  width: 100%;
 
+}
+.container-fluid{
+  width: 100%;
+  overflow: hidden;
   position: absolute;
   top: -100%;
   animation: anim4 2s forwards 2.5s;
+  z-index: 2;
 }
+
+#container{
+  width: 100%;
+  z-index: 1;
+  padding-top: 100px;
+  position: absolute;
+  top: -150%;
+  animation: anim4 2s forwards 2.5s;
+}
+
+
+
+
 #logo{
-  float: left;
+  float: right;
   margin-left: 100px;
   margin-top: 20px;
 }
 .logo-2{
   width: 100%;
+  padding-right: 100px;
+
 }
+
 #menu{
   font-family: "Bahnschrift Condensed";
   font-size: 14px;
@@ -122,9 +145,21 @@ body{
     }
 }
 
+#footer{
+  position: absolute;
+  top: 200%;
+  width: 100%;
+  height: 20%;
+  background-color: blue;
+}
+#footer{
+  text-align: center;
+  padding: 7% 15%;
+}
+
 #project{
-  position: relative;
-  top: 876px;
+  position: absolute;
+  top: 100%;
   width: 100%;
   height: 100%;
   background-color: red;
@@ -134,17 +169,7 @@ body{
   padding: 100px;
 }
 
-#footer{
-  position: relative;
-  top: 100%;
-  width: 100%;
-  height: 20%;
-  background-color: blue;
-}
-#footer{
-  text-align: center;
-  padding: 7% 15%;
-}
+
 
 .social-icon{
 width: 10%;
