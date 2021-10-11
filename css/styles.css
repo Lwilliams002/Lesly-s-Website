@@ -1,59 +1,58 @@
-body{
+body {
   margin: 0px;
   background: #1E242A;
 }
 
-
-#main{
+#main {
   width: 100%;
   height: 100%;
   position: absolute;
-
 }
 
-#box1{
+#box1 {
   width: 668px;
   height: 622px;
-  background-image:url("images/grid.png");
+  background-image: url("images/grid.png");
   position: relative;
   padding-top: 119px;
   left: 48%;
   animation: anim 2s forwards, anim2 5s forwards 5s;
 }
 
-
- #box1:after{
+#box1:after {
   content: '';
   position: relative;
   left: 50%;
   width: 530px;
   height: 625px;
   background-image:
-   url("images/black.png");
+    url("images/black.png");
   left: 0px;
 }
 
- @keyframes anim {
-  from{
+@keyframes anim {
+  from {
     bottom: -100%;
   }
 
-  to{
+  to {
     bottom: 20%;
   }
 }
+
 @keyframes anim2 {
-  from{
+  from {
     left: 50%;
     width: 0px;
   }
-  to{
+
+  to {
     width: 0px;
     left: 50%
   }
 }
 
-#box2{
+#box2 {
   width: auto;
   height: auto;
   font-family: "Bahnschrift Condensed";
@@ -67,27 +66,27 @@ body{
   overflow: hidden;
 }
 
-#text{
+#text {
   position: relative;
   left: -100%;
   animation: anim3 2s forwards 3s;
 }
 
 @keyframes anim3 {
-  from{
+  from {
     left: -100%;
   }
-  to{
+
+  to {
     left: 0%;
   }
 }
 
-#box3{
+#box3 {
   overflow: hidden;
-
-
 }
-.container-fluid{
+
+.container-fluid {
   width: 100%;
   overflow: hidden;
   position: absolute;
@@ -96,7 +95,7 @@ body{
   z-index: 2;
 }
 
-#container{
+#container {
   width: 100%;
   z-index: 1;
   padding-top: 100px;
@@ -105,21 +104,18 @@ body{
   animation: anim4 2s forwards 2.5s;
 }
 
-
-
-
-#logo{
+#logo {
   float: right;
   margin-left: 100px;
   margin-top: 20px;
 }
-.logo-2{
+
+.logo-2 {
   width: 100%;
   padding-right: 100px;
-
 }
 
-#menu{
+#menu {
   font-family: "Bahnschrift Condensed";
   font-size: 14px;
   color: white;
@@ -128,50 +124,109 @@ body{
   margin-top: 20px;
   float: right;
 }
-.menu-ul{
+
+.menu-ul {
   list-style: none;
 }
-.menu-ul-li{
+
+.menu-ul-li {
   display: inline-block;
   margin-left: 100px;
 }
 
 @keyframes anim4 {
-    from{
-      top: -100%;
-    }
-    to{
-      top: 0%;
-    }
+  from {
+    top: -100%;
+  }
+
+  to {
+    top: 0%;
+  }
 }
 
-#footer{
+#footer {
   position: absolute;
   top: 200%;
   width: 100%;
   height: 20%;
   background-color: blue;
 }
-#footer{
+
+#footer {
   text-align: center;
   padding: 7% 15%;
 }
 
-#project{
+#project {
+  margin: 0;
+  padding: 0;
   position: absolute;
   top: 100%;
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-color: #1E242A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.project-card{
-  padding: 100px;
+.swiper {
+  width: 240px;
+  height: 320px;
 }
 
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
 
+.swiper-slide:nth-child(1n) {
+  background-color: rgb(206, 17, 17);
+}
 
-.social-icon{
-width: 10%;
-margin: 20px 10px;
+.swiper-slide:nth-child(2n) {
+  background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+  background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+  background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+  background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
+}
+
+.social-icon {
+  width: 10%;
+  margin: 20px 10px;
 }
